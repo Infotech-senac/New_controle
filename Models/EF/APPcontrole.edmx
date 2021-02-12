@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="APPcontrole.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="APPcontroleStoreContainer">
+    <EntitySet Name="ini_do_estoqueSet" EntityType="APPcontrole.Store.ini_do_estoqueSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Quantidade_em_estoqueSet" EntityType="APPcontrole.Store.Quantidade_em_estoqueSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reposicao_estoqueSet" EntityType="APPcontrole.Store.Reposicao_estoqueSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Baixa_produtoSet" EntityType="APPcontrole.Store.Baixa_produtoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="produtos_em_reposicaoSet" EntityType="APPcontrole.Store.produtos_em_reposicaoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="produtos_enviadoSet" EntityType="APPcontrole.Store.produtos_enviadoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProdutosSet" EntityType="APPcontrole.Store.ProdutosSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Produtos_em_estoqueSet" EntityType="APPcontrole.Store.Produtos_em_estoqueSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ini_do_estoqueSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Quantidade_em_estoqueSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Reposicao_estoqueSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Baixa_produtoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="produtos_em_reposicaoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="produtos_enviadoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ProdutosSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Produtos_em_estoqueSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Shampoo" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Condicionador" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Sabonete" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="APPcontrole" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="APPcontroleContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ini_do_estoqueSet" EntityType="APPcontrole.ini_do_estoque" />
+          <EntitySet Name="Quantidade_em_estoqueSet" EntityType="APPcontrole.Quantidade_em_estoque" />
+          <EntitySet Name="Reposicao_estoqueSet" EntityType="APPcontrole.Reposicao_estoque" />
+          <EntitySet Name="Baixa_produtoSet" EntityType="APPcontrole.Baixa_produto" />
+          <EntitySet Name="produtos_em_reposicaoSet" EntityType="APPcontrole.produtos_em_reposicao" />
+          <EntitySet Name="produtos_enviadoSet" EntityType="APPcontrole.produtos_enviado" />
+          <EntitySet Name="ProdutosSet" EntityType="APPcontrole.Produtos" />
+          <EntitySet Name="Produtos_em_estoqueSet" EntityType="APPcontrole.Produtos_em_estoque" />
+        </EntityContainer>
+        <EntityType Name="ini_do_estoque">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Quantidade_em_estoque">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Reposicao_estoque">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Baixa_produto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="produtos_em_reposicao">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="produtos_enviado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Produtos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Produtos_em_estoque">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shampoo" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Condicionador" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sabonete" Type="String" Nullable="true" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APPcontroleStoreContainer" CdmEntityContainer="APPcontroleContainer">
+    <EntitySetMapping Name="ini_do_estoqueSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.ini_do_estoque)">
+        <MappingFragment StoreEntitySet="ini_do_estoqueSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quantidade_em_estoqueSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.Quantidade_em_estoque)">
+        <MappingFragment StoreEntitySet="Quantidade_em_estoqueSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reposicao_estoqueSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.Reposicao_estoque)">
+        <MappingFragment StoreEntitySet="Reposicao_estoqueSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Baixa_produtoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.Baixa_produto)">
+        <MappingFragment StoreEntitySet="Baixa_produtoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produtos_em_reposicaoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.produtos_em_reposicao)">
+        <MappingFragment StoreEntitySet="produtos_em_reposicaoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produtos_enviadoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.produtos_enviado)">
+        <MappingFragment StoreEntitySet="produtos_enviadoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProdutosSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.Produtos)">
+        <MappingFragment StoreEntitySet="ProdutosSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produtos_em_estoqueSet">
+      <EntityTypeMapping TypeName="IsTypeOf(APPcontrole.Produtos_em_estoque)">
+        <MappingFragment StoreEntitySet="Produtos_em_estoqueSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Shampoo" ColumnName="Shampoo" />
+          <ScalarProperty Name="Condicionador" ColumnName="Condicionador" />
+          <ScalarProperty Name="Sabonete" ColumnName="Sabonete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

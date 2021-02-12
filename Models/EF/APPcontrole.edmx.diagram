@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0f1d98bf00094543a56b754b0f11fe53" Name="Diagram1" ZoomLevel="96" >
+        <EntityTypeShape EntityType="APPcontrole.ini_do_estoque" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="APPcontrole.Quantidade_em_estoque" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="APPcontrole.Reposicao_estoque" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="APPcontrole.Baixa_produto" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="APPcontrole.produtos_em_reposicao" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="APPcontrole.produtos_enviado" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="APPcontrole.Produtos" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="APPcontrole.Produtos_em_estoque" Width="1.5" PointX="0.75" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

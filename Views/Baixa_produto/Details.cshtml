@@ -1,0 +1,42 @@
+﻿@model New_controle.Models.EF.Baixa_produto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Baixa_produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Shampoo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shampoo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Condicionador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Condicionador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sabonete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sabonete)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
